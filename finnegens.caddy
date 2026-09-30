@@ -1,0 +1,7 @@
+
+finnegens.com, www.finnegens.com {
+    root * /usr/share/caddy/finnegens
+    file_server
+    encode gzip
+    header /zh/* Content-Language zh-CN
+}
