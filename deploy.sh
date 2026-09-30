@@ -6,7 +6,7 @@ ROOT=/usr/share/caddy/finnegens
 say() { echo "== $* =="; }
 
 say "1 download site package"
-curl -sL --max-time 120 -o /tmp/finnegens_site.tar.gz "$BASE/finnegens_site.tar.gz"
+curl -sL --max-time 120 -o /tmp/finnegens_site.tar.gz "$BASE/finnegens_site.tar.gz?t=$(date +%s)"
 ls -la /tmp/finnegens_site.tar.gz
 
 say "2 extract into NEW dir $ROOT (existing site files untouched)"
